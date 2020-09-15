@@ -23,11 +23,22 @@ class Todo extends Component {
             )}
           />
           {this.props.todoProp.title}
+          <button style={buttonStyle}>x</button>
         </p>
       </div>
     );
   }
 }
+
+const buttonStyle = {
+  background: "#ff0000",
+  color: "#fff",
+  border: "none",
+  padding: "5px 9px",
+  borderRadius: "50%",
+  cursor: "pointer",
+  float: "right",
+};
 
 Todo.propTypes = {
   todoProp: PropTypes.object.isRequired,
